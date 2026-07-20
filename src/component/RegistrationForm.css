@@ -1,0 +1,266 @@
+/* ==========================
+   RESET
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ==========================
+   BODY
+========================== */
+
+body {
+    background: linear-gradient(135deg, #7c92db, #6fa3e7, #bfdbfe);
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top:25px;
+}
+
+/* ==========================
+   FORM CARD
+========================== */
+
+.form-card {
+    width: 70%;
+    max-width: 900px;
+    background: white;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.form-card h1 {
+    text-align: center;
+    color: #1e3a8a;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 35px;
+    font-size: 17px;
+}
+
+/* ==========================
+   SUCCESS MESSAGE
+========================== */
+
+.success-message {
+    background: #dcfce7;
+    color: #166534;
+    border: 1px solid #86efac;
+    padding: 14px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+/* ==========================
+   GRID
+========================== */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.full-width {
+    grid-column: 1 / 3;
+}
+
+/* ==========================
+   INPUT GROUP
+========================== */
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: .3s;
+
+    background: #f8fafc;
+
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+
+    border-color: #2563eb;
+
+    background: white;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, .15);
+
+}
+
+textarea {
+
+    resize: none;
+
+}
+
+/* ==========================
+   ERROR
+========================== */
+
+.input-group small {
+
+    color: #dc2626;
+
+    margin-top: 6px;
+
+    font-size: 13px;
+
+    min-height: 18px;
+
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+button {
+
+    width: 100%;
+
+    margin-top: 35px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+button:hover {
+
+    background: #1d4ed8;
+
+    transform: translateY(-2px);
+
+}
+
+.success-container{
+    text-align:center;
+    padding:25px 20px;;
+}
+
+.success-message{
+    width: 60%;
+    text-align: center;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #8be0a7;
+    padding: 18px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 auto 10px;   
+}
+
+.submit-btn{
+    width: 60%;
+    background: #1f3c88;
+    color: white;
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    background:#152c63;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px) {
+
+    .grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .full-width {
+
+        grid-column: 1;
+
+    }
+
+    .form-card {
+
+        padding: 25px;
+
+    }
+
+    .form-card h1 {
+
+        font-size: 28px;
+
+    }
+
+}

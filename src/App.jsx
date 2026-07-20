@@ -119,12 +119,41 @@ import React from 'react'
 
 // Task 3 
 
-import UseState from "./component/UseState";
+// import UseState from "./component/UseState";
+
+// export default function App() {
+//   return (
+//     <>
+//       <UseState />
+//     </>
+//   );
+// }
+
+
+// Task 4 
+
+// import "./App.css";
+// import EmployeeDashboard from "./component/EmployeeDashboard";
+
+// export default function App() {
+//   return (
+//     <>
+//       <EmployeeDashboard />
+//     </>
+//   );
+// }
+
+// Task 5 
+
+import RegistrationForm from "./component/RegistrationForm";
+
 
 export default function App() {
   return (
-    <>
-      <UseState />
-    </>
+    <RegistrationForm />
   );
 }
+
+
+
+
