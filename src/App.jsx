@@ -145,14 +145,24 @@ import React from 'react'
 
 // Task 5 
 
-import RegistrationForm from "./component/RegistrationForm";
+// import RegistrationForm from "./component/RegistrationForm";
 
+
+// export default function App() {
+//   return (
+//     <RegistrationForm />
+//   );
+// }
+
+// Task 6 
+
+import Stopwatch from "./component/Stopwatch";
 
 export default function App() {
-  return (
-    <RegistrationForm />
-  );
+  return <Stopwatch />;
 }
+
+ 
 
 
 
