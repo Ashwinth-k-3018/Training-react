@@ -156,13 +156,21 @@ import React from 'react'
 
 // Task 6 
 
-import Stopwatch from "./component/Stopwatch";
+// import Stopwatch from "./component/Stopwatch";
+
+// export default function App() {
+//   return <Stopwatch />;
+// }
+
+// Task 7 
+
+import MiniChat from "./component/MiniChat";
 
 export default function App() {
-  return <Stopwatch />;
+    return <MiniChat />;
 }
 
- 
+
 
 
 
