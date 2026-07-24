@@ -164,11 +164,24 @@ import React from 'react'
 
 // Task 7 
 
-import MiniChat from "./component/MiniChat";
+// import MiniChat from "./component/MiniChat";
+
+// export default function App() {
+//     return <MiniChat />;
+// }
+
+// Task 8 
+
+import ProfileCard from "./component/ProfileCard";
 
 export default function App() {
-    return <MiniChat />;
+  return (
+    <div>
+      <ProfileCard />
+    </div>
+  );
 }
+
 
 
 
