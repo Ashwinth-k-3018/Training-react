@@ -1,0 +1,142 @@
+.component3 {
+  background: #fff9fa;
+  border-radius: 20px;
+  padding: 28px 30px;
+  border: 3px solid #ec8a8a;
+  border-top: 4px solid #f43f5e;
+}
+
+.component3-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 50px;
+  background: #ffe4e9;
+  color: #be123c;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.dark .component3 {
+  background: #1c1520;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.dark .component3-badge {
+  background: #3b0d18;
+  color: #fb7185;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field.full {
+  grid-column: 1 / 3;
+}
+
+.field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.dark .field label {
+  color: #94a3b8;
+}
+
+.form input,
+.form select,
+.form textarea {
+  padding: 13px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #e2e8f0;
+  background: #f8fafc;
+  font-size: 14.5px;
+  font-family: inherit;
+  color: #0f172a;
+  transition: 0.25s;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #0ea5e9;
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.15);
+  background: #ffffff;
+}
+
+.form textarea {
+  height: 110px;
+  resize: none;
+}
+
+.dark .form input,
+.dark .form select,
+.dark .form textarea {
+  background: #241a20;
+  border-color: #3f2a32;
+  color: #e2e8f0;
+}
+
+.dark .form input::placeholder,
+.dark .form textarea::placeholder {
+  color: #7c6a70;
+}
+
+.dark .form input:focus,
+.dark .form select:focus,
+.dark .form textarea:focus {
+  border-color: #fb7185;
+  box-shadow: 0 0 0 4px rgba(251, 113, 133, 0.18);
+  background: #2a1e24;
+}
+
+.register-btn {
+  margin-top: 6px;
+  padding: 14px 0;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.register-btn:hover {
+  background: #000000;
+}
+
+.dark .register-btn {
+  background: #ffffff;
+  color: #0f172a;
+}
+
+.dark .register-btn:hover {
+  background: #e2e8f0;
+}
+
+@media (max-width: 768px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .field.full {
+    grid-column: 1;
+  }
+}

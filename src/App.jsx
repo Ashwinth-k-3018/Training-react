@@ -172,18 +172,72 @@ import React from 'react'
 
 // Task 8 
 
-import ProfileCard from "./component/ProfileCard";
+// import ProfileCard from "./component/ProfileCard";
+
+// export default function App() {
+//   return (
+//     <div>
+//       <ProfileCard />
+//     </div>
+//   );
+// }
+
+// Task 9 
+
+import { createContext, useState } from "react";
+import "./App.css";
+import Component1 from "./context/Component1";
+
+export const FormContext = createContext();
 
 export default function App() {
+  const [theme, setTheme] = useState("light");
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    mobile: "",
+    password: "",
+    confirmPassword: "",
+    dob: "",
+    gender: "",
+    address: "",
+    city: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
-    <div>
-      <ProfileCard />
-    </div>
+    <FormContext.Provider
+      value={{
+        formData,
+        handleChange,
+        theme,
+        toggleTheme,
+      }}
+    >
+      <div className={`app ${theme}`}>
+        <h1>useContext Form</h1>
+
+        <button onClick={toggleTheme} className="toggle-btn">
+          {theme === "light" ? "🌙 Dark Theme" : "☀ Light Theme"}
+        </button>
+
+        <Component1 />
+      </div>
+    </FormContext.Provider>
   );
 }
-
-
-
 
 
 

@@ -1,0 +1,32 @@
+.component1 {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 3px solid #cbd5e1;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.component1-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 50px;
+  background: #eef2f6;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.dark .component1 {
+  background: #0f1626;
+  border-color: #797b7d;
+}
+
+.dark .component1-badge {
+  background: #1a2332;
+  color: #d6d9dd;
+}

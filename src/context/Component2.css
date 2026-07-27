@@ -1,0 +1,31 @@
+.component2 {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 28px 30px;
+border: 3px solid #94b9e7;
+  border-top: 4px solid #0ea5e9;
+  margin-bottom: 24px;
+}
+
+.component2-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 50px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.dark .component2 {
+  background: #151f2e;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.dark .component2-badge {
+  background: #0c2436;
+  color: #38bdf8;
+}
