@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 
 // import SelfIntroduction from './SelfIntroduction'
 
@@ -184,61 +184,73 @@ import React from 'react'
 
 // Task 9 
 
-import { createContext, useState } from "react";
-import "./App.css";
-import Component1 from "./context/Component1";
+// import { createContext, useState } from "react";
+// import "./App.css";
+// import Component1 from "./context/Component1";
 
-export const FormContext = createContext();
+// export const FormContext = createContext();
+
+// export default function App() {
+//   const [theme, setTheme] = useState("light");
+
+//   const [formData, setFormData] = useState({
+//     firstName: "",
+//     lastName: "",
+//     email: "",
+//     mobile: "",
+//     password: "",
+//     confirmPassword: "",
+//     dob: "",
+//     gender: "",
+//     address: "",
+//     city: "",
+//   });
+
+//   const handleChange = (e) => {
+//     setFormData({
+//       ...formData,
+//       [e.target.name]: e.target.value,
+//     });
+//   };
+
+//   const toggleTheme = () => {
+//     setTheme(theme === "light" ? "dark" : "light");
+//   };
+
+//   return (
+//     <FormContext.Provider
+//       value={{
+//         formData,
+//         handleChange,
+//         theme,
+//         toggleTheme,
+//       }}
+//     >
+//       <div className={`app ${theme}`}>
+//         <h1>useContext Form</h1>
+
+//         <button onClick={toggleTheme} className="toggle-btn">
+//           {theme === "light" ? "🌙 Dark Theme" : "☀ Light Theme"}
+//         </button>
+
+//         <Component1 />
+//       </div>
+//     </FormContext.Provider>
+//   );
+// }
+
+// Task 10 - TicTacToe
+
+import React from "react";
+import TicTacToe from "./component/TicTacToe";
 
 export default function App() {
-  const [theme, setTheme] = useState("light");
-
-  const [formData, setFormData] = useState({
-    firstName: "",
-    lastName: "",
-    email: "",
-    mobile: "",
-    password: "",
-    confirmPassword: "",
-    dob: "",
-    gender: "",
-    address: "",
-    city: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
-  };
-
   return (
-    <FormContext.Provider
-      value={{
-        formData,
-        handleChange,
-        theme,
-        toggleTheme,
-      }}
-    >
-      <div className={`app ${theme}`}>
-        <h1>useContext Form</h1>
-
-        <button onClick={toggleTheme} className="toggle-btn">
-          {theme === "light" ? "🌙 Dark Theme" : "☀ Light Theme"}
-        </button>
-
-        <Component1 />
-      </div>
-    </FormContext.Provider>
+    <div>
+      <TicTacToe />
+    </div>
   );
 }
-
 
 
 
