@@ -230,7 +230,7 @@
 //         <h1>useContext Form</h1>
 
 //         <button onClick={toggleTheme} className="toggle-btn">
-//           {theme === "light" ? "🌙 Dark Theme" : "☀ Light Theme"}
+//           {theme === "light" ? " Dark Theme" : " Light Theme"}
 //         </button>
 
 //         <Component1 />
@@ -241,16 +241,22 @@
 
 // Task 10 - TicTacToe
 
-import React from "react";
-import TicTacToe from "./component/TicTacToe";
+// import React from "react";
+// import TicTacToe from "./component/TicTacToe";
+
+// export default function App() {
+//   return (
+//     <div>
+//       <TicTacToe />
+//     </div>
+//   );
+// }
+
+// Task 11 - UserReducerForm
+
+import UserReducerForm from "./component/UserReducerForm";
 
 export default function App() {
-  return (
-    <div>
-      <TicTacToe />
-    </div>
-  );
+  return <UserReducerForm />;
 }
-
-
 
